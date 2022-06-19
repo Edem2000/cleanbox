@@ -1,0 +1,64 @@
+body.lock {
+  overflow: hidden;
+}
+
+@keyframes cat-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  88% {
+    transform: translateY(70px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.preloader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #040404;
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.preloader .logo {
+  position: relative;
+  width: 300px;
+  height: 159px;
+}
+.preloader .logo .box-top {
+  position: absolute;
+  width: 78%;
+  left: 11%;
+  top: 1px;
+}
+.preloader .logo .cat {
+  position: absolute;
+  left: 37.2%;
+  bottom: 87px;
+  width: 29.47%;
+  animation: cat-up-down 1.5s linear infinite;
+}
+.preloader .logo .box-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.preloader .progress {
+  background-color: #fff;
+  height: 10px;
+  width: 0%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+
+/*# sourceMappingURL=preload.css.map */
